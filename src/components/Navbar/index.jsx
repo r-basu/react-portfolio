@@ -1,10 +1,14 @@
-export default function Navbar() {
+import './style.css'
+
+export default function Navbar(props) {
   return (
     <nav>
-      <a>About Me</a>
-      <a>Portfolio</a>
-      <a>Contact</a>
-      <a>Resume</a>
+      <a
+        className={`titles ${props.current ? "current" : ""}`}
+        onClick={() => props.handleClick(props.id)}
+      >
+        {props.name}
+      </a>
     </nav>
   );
 }

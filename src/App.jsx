@@ -3,12 +3,14 @@ import Header from "./components/Header";
 import About from "./components/About";
 
 export default function App() {
-  const [selectedTitle, setSelectedTitle] = useState("about");
+  const [selectedTitle, setSelectedTitle] = useState(1);
 
   return (
     <>
-      <Header selectedTitle={selectedTitle} />
-      <About />
+      <Header setSelectedTitle={setSelectedTitle} />
+      <div>
+        {selectedTitle === 1 && <About/>}
+      </div>
     </>
   );
 }
