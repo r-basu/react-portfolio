@@ -1,9 +1,14 @@
-function App() {
+import { useState } from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+
+export default function App() {
+  const [selectedTitle, setSelectedTitle] = useState("about");
+
   return (
     <>
-      <h1>Hello World!</h1>
+      <Header selectedTitle={selectedTitle} />
+      <About />
     </>
   );
 }
-
-export default App;
