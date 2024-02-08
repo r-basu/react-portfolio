@@ -25,7 +25,7 @@ export default function Header({ setSelectedTitle }) {
     },
   ]);
 
-  const setActive = (id) => {
+  const handleClick = (id) => {
     const newTitles = titles.map((title) => {
       if (title.id === id) {
         return { ...title, current: true };
@@ -47,7 +47,7 @@ export default function Header({ setSelectedTitle }) {
             id={title.id}
             name={title.name}
             current={title.current}
-            handleClick={setActive}
+            handleClick={handleClick}
           />
         ))}
       </div>
