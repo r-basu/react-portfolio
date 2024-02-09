@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import About from "./Pages/About";
 import Project from "./components/Project";
+import Footer from "./components/Footer"
+import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume";
 
@@ -54,6 +55,8 @@ export default function App() {
       )}
       {selectedTitle === 3 && <Contact />}
       {selectedTitle === 4 && <Resume />}
+      <br/>
+      <Footer/>
     </>
   );
 }

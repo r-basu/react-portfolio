@@ -1,3 +1,11 @@
+nav {
+    display: inline-block;
+}
+
+a {
+    margin: 5px;
+}
+
 .titles:hover{
     color:aqua
 }

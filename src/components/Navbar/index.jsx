@@ -1,5 +1,7 @@
 import "./style.css";
 
+import "./style.css"
+
 export default function Navbar(props) {
   return (
     <nav>
